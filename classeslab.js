@@ -284,9 +284,42 @@ class Post {
     }
 }
 
-let postArr = [datePosted, user, text];
+// let postArr = [{datePosted, user, text}];
 
 // b. Create an instance method that returns whether or not the post was made today.
 
+let date = new Date();
+let nPost = new Post (date, "NY Times", "Article is about Gun violence");
 
+// c. Filter your array of `Post` objects to only include posts made today.
 
+//arr.filter((el)=>{
+// if(el[datePosted] === date){
+//     return el
+// }
+// })
+
+// a. Make a class called `Car` with properties `make` and `model`.  Create an instance of a `Car`
+class Car {
+    constructor(make, model){
+        this.make =make;
+        this.model = model;
+    }
+}
+
+let myCar = new Car("Nissan", "Maxima")
+console.log(myCar)
+
+// b. Make a class called `Bike` with properties `gears` and `hasBell`.  Create an instance of `Bike`
+class Bike {
+    constructor(gears, hasBell){
+        this.gears = gears;
+        this.hasBell = hasBell;
+    }
+}
+
+let myBike = new Bike("6 Gears", false)
+console.log(myBike)
+
+// c. Give each class a static method called `numberOfWheels` that returns the number of wheels (2 for bikes, 4 for cars). 
+//  Why does it make sense for this to be a static method instead of an instance method?
