@@ -257,6 +257,11 @@ class Cylinder {
         let volume = Math.PI * Math.pow(this.radius, 2) * this.height
         return Math.floor(volume)
     }
+    getSurfaceArea(){
+        // 2πrh+2πr2
+        let area = Math.floor((2*(Math.PI)*(this.radius * this.height)+2*(Math.PI)*Math.pow(this.radius, 2)))
+        return area
+    }
 }
 
 let triCylinder = new Cylinder(10, 15)
@@ -265,3 +270,23 @@ let triCylinder = new Cylinder(10, 15)
 // the [volume](https://www.mathopenref.com/cylindervolume.html)
 
 console.log(triCylinder.getVolume())
+
+//c. Add an instance method `getSurfaceArea` that returns the [surface area](https://www.mathopenref.com/cylinderareamain.html)
+console.log(triCylinder.getSurfaceArea())
+
+//# 8a. Write a class called `Post` that has properties `datePosted`, `user`, and `text`.  Create an array of `Post` objects.
+
+class Post {
+    constructor(datePosted, user, text){
+        this.datePosted =datePosted;
+        this.user = user;
+        this.text = text;
+    }
+}
+
+let postArr = [datePosted, user, text];
+
+// b. Create an instance method that returns whether or not the post was made today.
+
+
+
