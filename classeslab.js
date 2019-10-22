@@ -265,4 +265,3 @@ let triCylinder = new Cylinder(10, 15)
 // the [volume](https://www.mathopenref.com/cylindervolume.html)
 
 console.log(triCylinder.getVolume())
-// console.log(Math.PI)
