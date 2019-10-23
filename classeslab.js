@@ -305,6 +305,9 @@ class Car {
         this.make =make;
         this.model = model;
     }
+    static numberOfWheels(){
+        return "4 Wheels for Car"
+    }
 }
 
 let myCar = new Car("Nissan", "Maxima")
@@ -316,6 +319,9 @@ class Bike {
         this.gears = gears;
         this.hasBell = hasBell;
     }
+    static numberOfWheels(){
+        return "2 Wheels for Bikes"
+    }
 }
 
 let myBike = new Bike("6 Gears", false)
@@ -323,3 +329,22 @@ console.log(myBike)
 
 // c. Give each class a static method called `numberOfWheels` that returns the number of wheels (2 for bikes, 4 for cars). 
 //  Why does it make sense for this to be a static method instead of an instance method?
+
+console.log(Bike.numberOfWheels())
+console.log(Car.numberOfWheels())
+
+//This makes sense because that Class number of wheels will never change.
+
+// 10 a. Make a class called Vehicle with properties color and name. 
+// Give it a method called makeSound which logs "WHHOOSSSH" to the console
+
+class Vehicle {
+    constructor(color, name){
+        this.color = color;
+        this.name = name;
+    }
+    makeSound(){
+        console.log("WHHOOSSSH");
+
+    }
+}
